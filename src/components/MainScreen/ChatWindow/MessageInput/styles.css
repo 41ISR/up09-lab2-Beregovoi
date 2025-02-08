@@ -1,0 +1,35 @@
+.message-input-block {
+    height: 50px;
+    padding: 25px;
+    background-color: rgba(4, 0, 53, 0.5);
+    border-top: 1px #111044 solid;
+    display: flex;
+    align-items: center;
+}
+
+.send-message-form {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.send-message-form input {
+    width: 90%;
+    background-color: rgba(12, 8, 58, 0.5);
+    border: 1px #1a185a solid;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.send-message-form button {
+    width: 10%;
+    background: linear-gradient(35deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    border: none;
+    color: #fff;
+    background-size: 150%;
+    transition: background-position ease-in-out 200ms;
+}
+
+.send-message-form button:hover {
+    background-position: 100% 0;
+}

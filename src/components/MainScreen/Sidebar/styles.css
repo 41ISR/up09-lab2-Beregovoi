@@ -1,0 +1,11 @@
+.sidebar {
+    width: 20%;
+    background-color: rgba(4, 0, 53, 0.5);
+    border-right: 1px #111044 solid;
+}
+
+.logotype {
+    padding: 25px 15px;
+    color: #fff;
+    font-size: 24px;
+}

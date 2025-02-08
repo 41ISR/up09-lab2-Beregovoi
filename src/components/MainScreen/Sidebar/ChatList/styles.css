@@ -1,0 +1,23 @@
+.chat-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-cell {
+    color: #7c7c7c;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-top: 1px #111044 solid;
+    border-bottom: 1px #111044 solid;
+    transition: all ease-in-out 100ms;
+    cursor: pointer;
+}
+
+.chat-cell:hover {
+    background-color: rgba(12, 8, 58, 0.5);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-top: 1px #111044 solid;
+    border-bottom: 1px #111044 solid;
+}
