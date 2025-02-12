@@ -1,7 +1,7 @@
 import './styles.css'
 
-import MessageList from "./MessageList"
-import MessageInput from "./MessageInput"
+import MessageList from "../../components/MainScreen/ChatWindow/MessageList"
+import MessageInput from "../../components/MainScreen/ChatWindow/MessageInput"
 
 export default function ChatWindow() {
 

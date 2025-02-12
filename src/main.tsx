@@ -1,13 +1,13 @@
+import './index.css'
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import LoginScreen from './components/LoginScreen/index.jsx'
-import MainScreen from './components/MainScreen/index.jsx'
+import { RouterProvider } from 'react-router-dom'
+import router from './app/router/router.jsx'
 createRoot(document.getElementById('root')!).render(
 
   <StrictMode>
-    {/* <LoginScreen /> */}
-    <MainScreen />
+    <RouterProvider router={router} />
   </StrictMode>
 
 )

@@ -1,7 +1,7 @@
 import './styles.css'
 
-import Sidebar from './Sidebar/index.jsx'
-import ChatWindow from './ChatWindow/index.jsx'
+import Sidebar from './Sidebar/index.js'
+import ChatWindow from '../../pages/ChatPage/index.js'
 
 export default function MainScreen() {
 

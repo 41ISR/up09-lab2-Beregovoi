@@ -1,6 +1,13 @@
+import { useState } from 'react'
 import './styles.css'
 
 export default function LoginScreen() {
+
+    const [id, setId] = useState();
+
+    const handleClick = () => {
+        console.log("123456789")
+    }
 
     return (
         <div className='login-screen'>
@@ -10,7 +17,7 @@ export default function LoginScreen() {
                     <span>Введите ID</span>
                     <input type="text" />
                 </div>
-                <button type="submit">Войти</button>
+                <button onClick={handleClick} type="submit">Войти</button>
             </form>
         </div>
     )

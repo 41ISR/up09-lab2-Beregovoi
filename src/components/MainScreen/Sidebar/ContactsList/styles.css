@@ -1,0 +1,23 @@
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.contact-cell {
+    font-size: 14px;
+    color: #7c7c7c;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: rgba(12, 8, 58, 0.5);
+    border: 1px #1a185a solid;
+    transition: all ease-in-out 100ms;
+}
+
+.contact-cell:hover {
+    color: #fff;
+    border: 1px #322ea1 solid;
+}

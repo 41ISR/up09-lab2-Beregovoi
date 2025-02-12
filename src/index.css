@@ -6,6 +6,12 @@ body {
   animation: gradient 10s ease infinite;
 }
 
+html {
+  scrollbar-color: rgba(12, 8, 58, 0.5) #00000000;
+  scrollbar-width: thin;
+  scrollbar-color: none;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -17,7 +23,6 @@ body {
     background-position: 0% 50%;
   }
 }
-
 
 /* END CUSTOM STYLES */
 

@@ -1,0 +1,66 @@
+.message-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 50px;
+    overflow-y: scroll;
+}
+
+.empty {
+    justify-content: center;
+}
+
+.filled {
+    justify-content: flex-start;
+}
+
+.no-messages-heading {
+    font-size: 26px;
+    text-align: center;
+    font-weight: light;
+    line-height: 30px;
+    color: #7c7c7c50;
+}
+
+.sender-message-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(12, 8, 58, 0.5);
+    border: 1px #1a185a solid;
+    padding: 15px;
+    border-radius: 15px 15px 15px 0px;
+}
+
+.sender-name {
+    border-bottom: 1px #7c7c7c50 solid;
+    color: #7c7c7c;
+    padding-bottom: 10px;
+}
+
+.sender-message {
+    color: #fff;
+}
+
+.user-message-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(12, 8, 58, 0.5);
+    border: 1px #1a185a solid;
+    padding: 15px;
+    border-radius: 15px 15px 0px 15px;
+}
+
+.user-name {
+    border-bottom: 1px #7c7c7c50 solid;
+    color: #7c7c7c;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+.user-message {
+    color: #fff;
+    text-align: right;
+}
