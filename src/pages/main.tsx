@@ -3,11 +3,11 @@ import { Outlet, useNavigate } from 'react-router-dom';
 
 export default function Auth() {
 
-    const userId = "123";
+    const usersId = "";
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!userId) {
+        if (!usersId) {
             navigate("/login");
         }
     }, [])
