@@ -11,11 +11,19 @@ interface IStore {
     setUsersId: (usersId: IUser[]) => void;
 }
 
-const useStore = create<IStore>((set) => ({
-    user: undefined,
-    setUser: (id: string) => set({ user: id }),
-    usersId: [],
-    setUsersId: (usersId: IUser[]) => set({ usersId: usersId }),
-}));
+const useStore = create<IStore>((set) => {
+    const storedUsersId = localStorage.getItem('usersId');
+    const initialUsersId = storedUsersId ? JSON.parse(storedUsersId) : [];
+
+    return {
+        user: undefined,
+        setUser: (id: string) => set({ user: id }),
+        usersId: initialUsersId,
+        setUsersId: (usersId: IUser[]) => {
+            localStorage.setItem('usersId', JSON.stringify(usersId));
+            set({ usersId });
+        },
+    };
+});
 
 export default useStore;

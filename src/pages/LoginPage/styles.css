@@ -35,6 +35,22 @@
     border-radius: 15px;
 }
 
+.button-text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-text {
+    cursor: pointer;
+    text-align: center;
+    transition: all ease-in-out 200ms;
+}
+
+.registration-text:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
 .login-form button {
     background: linear-gradient(35deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
     border: none;
